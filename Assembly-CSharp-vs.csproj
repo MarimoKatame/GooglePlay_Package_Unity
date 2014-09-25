@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{51603014-666F-F979-C9E3-A3D7219F917D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_0;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Achievement.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\DummyClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\RealTimeMultiplayerListener.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\Multiplayer\TurnBasedMatch.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\BasicApi\OnStateLoadedListener.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\ISocialPlatform\PlayGamesLocalUser.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\OurUtils\Logger.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\OurUtils\Misc.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\AchievementBank.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\AndroidClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\AndroidRtmpClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\AndroidTbmpClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\GameHelperManager.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\JavaConsts.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\JavaUtil.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\NoopProxy.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\Android\OnStateResultProxy.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\iOS\IOSClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\iOS\IOSRtmpClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\iOS\MiniJSON.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\Platforms\iOS\iOSTbmpClient.cs" />
+     <Compile Include="Assets\Google\GooglePlayGames\PluginVersion.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Player_1_Tour.cs" />
+     <Compile Include="Assets\Scripts\Player_2_Tour.cs" />
+     <None Include="Assets\Google\Editor\template-AndroidManifest.txt" />
+     <None Include="Assets\Google\Plugins\Android\BaseGameUtils\AndroidManifest.xml" />
+     <None Include="Assets\Google\Editor\projsettings.txt" />
+     <None Include="Assets\Google\Editor\template-GPGSParams.txt" />
+     <None Include="Assets\Google\Plugins\Android\BaseGameUtils\res\values\gamehelper_strings.xml" />
+ <Reference Include="GPGSUtils">
+ <HintPath>C:/Users/Cristian/Documents/GooglePlay_Package_Unity/Assets/Google/Plugins/GPGSUtils.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
